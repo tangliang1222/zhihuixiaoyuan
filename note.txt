@@ -1,0 +1,6 @@
+1级联问题的解决方法之一
+	 options:question.options?question.options:'',
+        	options:JSON.parse(JSON.stringify(question.options)),
+         经过json字符串的转化，页面显示的选项和模态框的数据不一样，不会出现级联问题
+2 axios post传递参数时参数  options[1][score]  ===>>>  options[1].score
+qs.stringify((obj),{allowDots:true})
